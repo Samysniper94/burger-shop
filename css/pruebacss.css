@@ -1,6 +1,6 @@
 body {
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #29294a 49%, #020024 100%); }
+  background: #9a99ab;
+  background: radial-gradient(circle, #9a99ab 0%, #b5b5b5 50%, #8e8e8e 100%); }
 
 header {
   background-color: black;
@@ -29,6 +29,10 @@ header {
 .hero img {
   width: 100%; }
 
+.section-events {
+  width: 80%;
+  padding: 20px 15% 100px 15%; }
+
 footer {
   background-color: black;
   display: flex;
@@ -36,4 +40,13 @@ footer {
   width: 100%;
   justify-content: space-between;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+  height: 100px; }
+  footer .footer-menu {
+    background-color: black;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none; }

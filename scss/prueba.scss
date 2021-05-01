@@ -1,6 +1,6 @@
 body {
-    background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(41,41,74,1) 49%, rgba(2,0,36,1) 100%);
+    background: rgb(154,153,171);
+background: radial-gradient(circle, rgba(154,153,171,1) 0%, rgba(181,181,181,1) 50%, rgba(142,142,142,1) 100%);
 }
 
 header {
@@ -40,6 +40,11 @@ header {
     }
 }
 
+.section-events {
+    width: 80%;
+    padding: 20px 15% 100px 15%;
+}
+
 footer {
     background-color: black;
     display: flex;
@@ -48,4 +53,14 @@ footer {
     justify-content: space-between;
     margin: 0;
     list-style: none;
+    height: 100px;
+        .footer-menu{
+        background-color: black;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        list-style: none;
+    }
 }
