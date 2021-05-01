@@ -93,19 +93,17 @@ header {
           background: #100e17;
           margin-left: 10px;
           list-style: none;
-          li{
+          li {
             a {
               color: white;
             }
           }
         }
-  
+
         &.about-option:hover ul.sub-menu {
           display: block !important;
         }
       }
-
-      
     }
   }
 }
@@ -132,7 +130,7 @@ header {
   display: flex;
   padding: 80px 0;
   flex-direction: column;
-  h2 {
+  h1 {
     color: white;
   }
 }
