@@ -146,7 +146,6 @@ header {
   margin-left: -50px;
 }
 
-
 .card {
   display: flex;
   height: 280px;
@@ -163,7 +162,6 @@ header {
     margin: 20px 0 0 !important;
   }
 }
-
 
 .card:hover {
   transform: translateY(-20px);
@@ -321,6 +319,11 @@ footer {
 .section-content {
   margin: 40px auto 40px;
   flex-direction: column;
+  width: 40%;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
   form {
     background-color: #f2f2f2;
     padding: 20px;

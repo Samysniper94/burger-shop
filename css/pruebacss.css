@@ -255,7 +255,11 @@ footer {
 
 .section-content {
   margin: 40px auto 40px;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 40%; }
+  @media screen and (max-width: 1024px) {
+    .section-content {
+      width: 80%; } }
   .section-content form {
     background-color: #f2f2f2;
     padding: 20px; }
