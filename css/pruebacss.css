@@ -232,3 +232,16 @@ footer {
     height: 22px; }
     footer .footer-menu li a i {
       color: #100e17; }
+
+.section-content {
+  margin: 40px auto 40px;
+  flex-direction: column; }
+  .section-content form {
+    background-color: #f2f2f2;
+    padding: 20px; }
+  .section-content h1 {
+    background-color: #fcb045;
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    margin: 0; }
