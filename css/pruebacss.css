@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 body {
   background-color: #100e17;
   font-family: "Open Sans", sans-serif; }
@@ -13,6 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
+    align-items: center;
     /*  .glitch{
       position: absolute;
       top: 0;
@@ -61,30 +63,45 @@ header {
         
     } */ }
     header nav .brand {
+      font-family: 'Pattaya', sans-serif;
       text-decoration: none;
-      color: #100e17; }
+      color: #100e17;
+      font-weight: bold;
+      font-size: 30px; }
     header nav .menu {
       display: flex;
       padding: 0;
       width: 400px;
-      justify-content: space-between;
+      height: 100px;
+      align-items: center;
       list-style: none;
       margin: 0; }
-      header nav .menu li a {
-        color: #100e17;
-        text-decoration: none; }
-      header nav .menu li .sub-menu {
-        display: none !important;
-        position: absolute;
-        padding: 10px;
-        width: 100px;
-        background: #100e17;
-        margin-left: 10px;
-        list-style: none; }
-        header nav .menu li .sub-menu li a {
-          color: white; }
-      header nav .menu li.about-option:hover ul.sub-menu {
-        display: block !important; }
+      header nav .menu li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 40px; }
+        header nav .menu li a {
+          font-family: 'Pattaya', sans-serif;
+          color: #100e17;
+          text-decoration: none;
+          font-size: 24px; }
+        header nav .menu li:hover {
+          background-color: black; }
+          header nav .menu li:hover a {
+            color: white; }
+        header nav .menu li .sub-menu {
+          display: none !important;
+          position: absolute;
+          padding: 10px;
+          top: 100px;
+          background: #100e17;
+          list-style: none; }
+          header nav .menu li .sub-menu li a {
+            color: white;
+            font-size: 18px; }
+        header nav .menu li.menu-option:hover ul.sub-menu {
+          display: block !important; }
 
 .hero img {
   width: 100%; }
@@ -231,6 +248,11 @@ svg {
           width: 100%; } }
       .home-content article .info-content h3 {
         padding-top: 10px; }
+
+/deep/ .btn .btn-primary, .btn .btn-primary:disabled {
+  background-color: black !important;
+  border-color: black;
+  color: #fcb045; }
 
 footer {
   background-color: #fcb045;

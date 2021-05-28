@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
 body {
   background-color: #100e17;
   font-family: "Open Sans", sans-serif;
@@ -17,10 +19,14 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
+    align-items: center;
 
     .brand {
+      font-family: 'Pattaya', sans-serif;
       text-decoration: none;
       color: #100e17;
+      font-weight: bold;
+      font-size: 30px;
     }
 
     /*  .glitch{
@@ -76,31 +82,45 @@ header {
       display: flex;
       padding: 0;
       width: 400px;
-      justify-content: space-between;
+      height: 100px;
+      align-items: center;
       list-style: none;
       margin: 0;
 
       li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
         a {
+          font-family: 'Pattaya', sans-serif;
           color: #100e17;
           text-decoration: none;
+          font-size: 24px;
+        }
+        &:hover {
+          background-color: black;
+
+          a {
+            color: white;
+          }
         }
         .sub-menu {
           display: none !important;
           position: absolute;
           padding: 10px;
-          width: 100px;
+          top: 100px;
           background: #100e17;
-          margin-left: 10px;
           list-style: none;
           li {
             a {
               color: white;
+              font-size: 18px;
             }
           }
         }
 
-        &.about-option:hover ul.sub-menu {
+        &.menu-option:hover ul.sub-menu {
           display: block !important;
         }
       }
@@ -286,6 +306,11 @@ svg {
       }
     }
   }
+}
+/deep/ .btn .btn-primary, .btn .btn-primary:disabled {
+  background-color: black !important;
+  border-color: black;
+  color:rgba(252, 176, 69, 1);
 }
 
 footer {
