@@ -9,6 +9,10 @@ header {
   height: 100px;
   align-items: center;
   display: flex; }
+  @media screen and (max-width: 1024px) {
+    header {
+      height: 160px;
+      padding: 24px 10% 0; } }
   header nav {
     width: 100%;
     display: flex;
@@ -62,8 +66,11 @@ header {
         }
         
     } */ }
+    @media screen and (max-width: 1024px) {
+      header nav {
+        flex-direction: column; } }
     header nav .brand {
-      font-family: 'Pattaya', sans-serif;
+      font-family: "Pattaya", sans-serif;
       text-decoration: none;
       color: #100e17;
       font-weight: bold;
@@ -82,7 +89,7 @@ header {
         align-items: center;
         padding: 0 40px; }
         header nav .menu li a {
-          font-family: 'Pattaya', sans-serif;
+          font-family: "Pattaya", sans-serif;
           color: #100e17;
           text-decoration: none;
           font-size: 24px; }
@@ -100,8 +107,25 @@ header {
           header nav .menu li .sub-menu li a {
             color: white;
             font-size: 18px; }
-        header nav .menu li.menu-option:hover ul.sub-menu {
-          display: block !important; }
+        @media screen and (max-width: 1024px) {
+          header nav .menu li.menu-option {
+            background: none; } }
+        @media screen and (max-width: 1024px) {
+          header nav .menu li.menu-option:hover ul.sub-menu {
+            display: flex; } }
+        header nav .menu li.menu-option:visited ul.sub-menu {
+          display: block; }
+        @media screen and (max-width: 1024px) {
+          header nav .menu li.menu-option a {
+            color: black;
+            text-decoration: underline; }
+          header nav .menu li.menu-option .sub-menu {
+            top: 160px;
+            width: 100%;
+            left: 0;
+            justify-content: space-evenly; }
+            header nav .menu li.menu-option .sub-menu li {
+              padding: 0 20px; } }
 
 .hero img {
   width: 100%; }
@@ -253,7 +277,8 @@ svg {
       .home-content article .info-content h3 {
         padding-top: 10px; }
 
-.btn, .btn:disabled {
+.btn,
+.btn:disabled {
   background-color: black !important;
   border-color: black;
   color: #fcb045;
