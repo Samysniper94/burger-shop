@@ -105,53 +105,44 @@ header {
           text-decoration: none;
           font-size: 24px;
         }
-        &:hover {
-          background-color: black;
-
-          a {
-            color: white;
-          }
-        }
-        .sub-menu {
-          display: none !important;
-          position: absolute;
-          padding: 10px;
-          top: 100px;
-          background: #100e17;
-          list-style: none;
-          li {
-            a {
-              color: white;
-              font-size: 18px;
-            }
-          }
-        }
 
         &.menu-option {
           @media screen and (max-width: 1024px) {
             background: none;
           }
-          &:hover ul.sub-menu {
+
+          .sub-menu {
+            position: absolute;
+            padding: 10px;
+            top: 100px;
+            background: #100e17;
+            list-style: none;
+            display: none;
             @media screen and (max-width: 1024px) {
-              display: flex;
-            }
-          }
-          &:visited ul.sub-menu {
-            display: block;
-          }
-          @media screen and (max-width: 1024px) {
-            a {
-              color: black;
-              text-decoration: underline;
-            }
-            .sub-menu {
               top: 160px;
               width: 100%;
               left: 0;
-
               justify-content: space-evenly;
-              li {
+            }
+
+            &.show {
+              @media screen and (max-width: 1024px) {
+                display: flex;
+              }
+  
+              @media screen and (min-width: 1024px) {
+                display: block;
+              }
+            }
+
+            li {
+              @media screen and (max-width: 1024px) {
                 padding: 0 20px;
+              }
+
+              a {
+                color: white;
+                font-size: 18px;
               }
             }
           }
@@ -261,7 +252,12 @@ header {
   width: 0px;
   height: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(144, 144, 144, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(144, 144, 144, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   transition: 0.6s ease-out;
 }
 

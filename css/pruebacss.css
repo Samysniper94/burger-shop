@@ -93,39 +93,34 @@ header {
           color: #100e17;
           text-decoration: none;
           font-size: 24px; }
-        header nav .menu li:hover {
-          background-color: black; }
-          header nav .menu li:hover a {
-            color: white; }
-        header nav .menu li .sub-menu {
-          display: none !important;
+        @media screen and (max-width: 1024px) {
+          header nav .menu li.menu-option {
+            background: none; } }
+        header nav .menu li.menu-option .sub-menu {
           position: absolute;
           padding: 10px;
           top: 100px;
           background: #100e17;
-          list-style: none; }
-          header nav .menu li .sub-menu li a {
-            color: white;
-            font-size: 18px; }
-        @media screen and (max-width: 1024px) {
-          header nav .menu li.menu-option {
-            background: none; } }
-        @media screen and (max-width: 1024px) {
-          header nav .menu li.menu-option:hover ul.sub-menu {
-            display: flex; } }
-        header nav .menu li.menu-option:visited ul.sub-menu {
-          display: block; }
-        @media screen and (max-width: 1024px) {
-          header nav .menu li.menu-option a {
-            color: black;
-            text-decoration: underline; }
-          header nav .menu li.menu-option .sub-menu {
-            top: 160px;
-            width: 100%;
-            left: 0;
-            justify-content: space-evenly; }
+          list-style: none;
+          display: none; }
+          @media screen and (max-width: 1024px) {
+            header nav .menu li.menu-option .sub-menu {
+              top: 160px;
+              width: 100%;
+              left: 0;
+              justify-content: space-evenly; } }
+          @media screen and (max-width: 1024px) {
+            header nav .menu li.menu-option .sub-menu.show {
+              display: flex; } }
+          @media screen and (min-width: 1024px) {
+            header nav .menu li.menu-option .sub-menu.show {
+              display: block; } }
+          @media screen and (max-width: 1024px) {
             header nav .menu li.menu-option .sub-menu li {
               padding: 0 20px; } }
+          header nav .menu li.menu-option .sub-menu li a {
+            color: white;
+            font-size: 18px; }
 
 .hero img {
   width: 100%; }
