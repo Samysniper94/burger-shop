@@ -253,10 +253,11 @@ svg {
       .home-content article .info-content h3 {
         padding-top: 10px; }
 
-/deep/ .btn .btn-primary, .btn .btn-primary:disabled {
+.btn, .btn:disabled {
   background-color: black !important;
   border-color: black;
-  color: #fcb045; }
+  color: #fcb045;
+  border-radius: 4px; }
 
 footer {
   background-color: #fcb045;
@@ -296,14 +297,14 @@ footer {
     width: 100%;
     margin: 0; }
 
-body {
+/* body {
   color: #333;
   font-family: Arial, Helvetica, serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
-  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff; }
-
+  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+} */
 h1 {
   background: #333;
   color: #fff;

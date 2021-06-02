@@ -313,10 +313,11 @@ svg {
     }
   }
 }
-/deep/ .btn .btn-primary, .btn .btn-primary:disabled {
+.btn, .btn:disabled {
   background-color: black !important;
   border-color: black;
   color:rgba(252, 176, 69, 1);
+  border-radius: 4px;
 }
 
 footer {
@@ -368,14 +369,14 @@ footer {
   }
 }
 
-body {
+/* body {
   color: #333;
   font-family: Arial, Helvetica, serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
   background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
-}
+} */
 
 h1 {
   background: #333;
