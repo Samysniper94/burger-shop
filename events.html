@@ -39,25 +39,16 @@
     </nav>
   </header>
   <div class="hero">
-    <img src="images/hero-home.jpg" alt="...">
+    <img src="images/hero-covi.jpg" alt="...">
   </div>
   <section>
-    <article>
-      <img src="images/hero-covi.jpg" alt="" class="section-events">
-      <p>
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non congue velit. Duis interdum et purus ut
-        tincidunt. Quisque commodo vitae dolor et molestie. Vivamus tristique dignissim orci in cursus. Sed accumsan mi
-        id fermentum fermentum. Quisque id porta magna, non laoreet magna. Cras cursus est venenatis nisi tempor, quis
-        varius eros rhoncus.
-
-        Integer sit amet massa a magna congue condimentum at et velit. In accumsan at nunc eu tincidunt. Fusce efficitur
-        viverra tellus, eu pretium ex venenatis blandit. Quisque mollis dignissim turpis, a ullamcorper elit sagittis
-        at. Donec dignissim lacus risus. Nam laoreet ultrices nisi, sed suscipit est congue in. In quam ante, sodales
-        quis commodo eget, tristique a elit. Quisque feugiat metus orci, ullamcorper sodales lectus imperdiet nec. Sed
-        gravida semper nibh, eget vulputate nisl faucibus in. Cras condimentum efficitur sagittis. Ut suscipit et dolor
-        sagittis porttitor. Integer in velit nisl. Nunc lobortis placerat rhoncus. Curabitur euismod eu sapien non
-        ultricies.</p>
+    <article class="events">
+      <p>Due to the pandemic situation, we canceled all the events to which the restaurant was participating in its
+        organization. Let's take care of each other! Soon we will be able to enjoy shows and music in our spacious event
+        room.
+        Shortly we will be informing about the protocol to access our restaurant, with reduced capacity of clients, in
+        order to continue facing the virus.
+        Thanks for your understanding.</p>
     </article>
   </section>
   <footer>
@@ -83,19 +74,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function(){
-        let showSubMenu = false;
-        $('.menu-option').click(function(){
-          if (showSubMenu) {
-            $('.sub-menu').removeClass('show');
-          } else {
-            $('.sub-menu').addClass('show');
-          }
-          showSubMenu = !showSubMenu;
-        });
+  <script>
+    $(document).ready(function () {
+      let showSubMenu = false;
+      $('.menu-option').click(function () {
+        if (showSubMenu) {
+          $('.sub-menu').removeClass('show');
+        } else {
+          $('.sub-menu').addClass('show');
+        }
+        showSubMenu = !showSubMenu;
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
